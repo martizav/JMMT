@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Advanced HTML Structure</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      background-image: url('https://i.pinimg.com/736x/22/ed/93/22ed936ac0d1af21b0f05142c8f8a881.jpg');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: rgba(255, 209, 223, 0.8);
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #FFD1DF;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #FFD1DF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .clickable-image {
+      width: 300px;
+      height: auto;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .clickable-image:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Web Page</h1>
+    <p>Explore the interactive table, clickable image, and button below.</p>
+  </header>
+
+  <main>
+    <table>
+      <caption><strong>Example Data Table</strong></caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monica</td>
+          <td>5</td>
+          <td>South Korea</td>
+        </tr>
+        <tr>
+          <td>Martiza</td>
+          <td>1</td>
+          <td>Japan</td>
+        </tr>
+        <tr>
+          <td>Jennica</td>
+          <td>1000</td>
+          <td>Sa kaniya</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">Watch Video</button>
+
+    <div class="image-container">
+      <a href="https://www.example.com" target="_blank">
+        <img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x4.jpg" alt="Placeholder Image" class="clickable-image">
+      </a>
+    </div>
+  </main>
+
+</body>
+</html>
